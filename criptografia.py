@@ -8,11 +8,11 @@ def criptografar_dados(dados: bytes, chave: bytes) -> tuple[bytes, bytes]:
     
     iv = os.urandom(16)
     
-    
+
     padder = padding.PKCS7(algorithms.AES.block_size).padder()
     dados_preenchidos = padder.update(dados) + padder.finalize()
     
-    
+
     cipher = Cipher(algorithms.AES(chave), modes.CBC(iv), backend=default_backend())
     encryptor = cipher.encryptor()
     
