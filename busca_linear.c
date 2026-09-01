@@ -1,16 +1,21 @@
 #include <stdio.h>
 #include <string.h>
 
-void funcao_vulneravel() {
-    char buffer_inseguro[100]; 
-    
+void funcao_segura(void) {
+    char buffer_seguro[100];
+
     printf("Digite uma entrada segura: ");
-    fgets(buffer_inseguro, sizeof(buffer_inseguro), stdin);
     
-    printf("Dado armazenado com segurança: %s\n", buffer_inseguro);
+    
+    if (fgets(buffer_seguro, sizeof(buffer_seguro), stdin) != NULL) {
+        
+        buffer_seguro[strcspn(buffer_seguro, "\n")] = '\0';
+        
+        printf("Dado armazenado com seguranca: %s\n", buffer_seguro);
+    }
 }
 
-int main() {
-    funcao_vulneravel();
+int main(void) {
+    funcao_segura();
     return 0;
 }
