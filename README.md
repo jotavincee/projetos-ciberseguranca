@@ -1,68 +1,69 @@
-# 🛡️ Portfólio de Cibersegurança: Engenharia de Segurança & Defesa Cibernética
+# 🛡️ Portfólio Avançado de Cibersegurança: Engenharia, Defesa & Arquitetura de Redes
 
-Bem-vindo ao meu repositório focado em segurança ofensiva, defensiva e criptografia aplicada. Este espaço reúne projetos práticos desenvolvidos para demonstrar competências essenciais no ciclo de vida de desenvolvimento seguro (SDLC), automação de rotinas de monitoramento e mitigação de falhas críticas de segurança de software em conformidade com as principais metodologias globais (OWASP, MITRE ATT&CK).
+Bem-vindo ao meu repositório avançado de engenharia de segurança cibernética. Este espaço reúne implementações profissionais focadas em segurança de aplicações (AppSec), criptografia aplicada à governança de dados, inteligência de ameaças (Cyber Threat Intelligence) e automação defensiva (Blue Team) alinhadas aos frameworks globais *OWASP Top 10, **MITRE ATT&CK* e melhores práticas do mercado corporativo.
 
 ---
 
 ## 🚀 Projetos Incluídos neste Repositório
 
-### 1. 🔬 Analisador de Segurança & Prevenção a Estouro de Buffer (Buffer Overflow) em C
-* *Arquivo Principal:* buffer_overflow.c
-* *O que faz:* Estudo de caso prático que simula o tratamento seguro de entradas de dados em baixo nível. O projeto aborda a transição de funções inseguras do C padrão para práticas consolidadas de mitigação contra corrupção de memória.
-* *Principais Conceitos Demonstrados:*
-  * *Mitigação Prática de Buffer Overflow:* Substituição de métodos de leitura vulneráveis que não impõem limites à pilha pelo uso monitorado de fgets combinado ao operador sizeof.
-  * *Tratamento Seguro de Strings:* Manipulação avançada e sanitização de buffers com remoção explícita de caracteres residuais de quebra de linha (\n), prevenindo comportamentos indefinidos no sistema.
+### 1. 🔬 Analisador de Segurança & Prevenção a Estouro de Buffer (C)
+* *Arquivo:* buffer_overflow.c
+* *Escopo:* Mitigação de vulnerabilidades críticas em código legado em baixo nível através de sanitização da memória pilha utilizando fgets e controle de tamanho dinâmico por sizeof.
 
-### 2. 🔑 Engine de Criptografia Simétrica Avançada (AES-256-CBC) em Python
-* *Arquivo Principal:* criptografia.py
-* *O que faz:* Implementação de um módulo robusto de cifragem industrial utilizando o algoritmo AES com chaves de 256 bits no modo de operação Cipher Block Chaining (CBC). Garantia de confidencialidade de dados em repouso (Data at Rest).
-* *Principais Conceitos Demonstrados:*
-  * *Gerenciamento Seguro de Segredos:* Geração de Vetores de Inicialização (IV) e chaves mestras criptograficamente fortes através de entropia do sistema operacional (os.urandom).
-  * *Alinhamento de Blocos (Padding):* Implementação do padrão PKCS7 para estruturação uniforme de dados simétricos antes do processamento de cifragem.
+### 2. 🔑 Engine de Criptografia Simétrica Avançada (AES-256-CBC) (Python)
+* *Arquivo:* criptografia.py
+* *Escopo:* Implementação corporativa de criptografia simétrica para proteção de dados em repouso (Data at Rest). Utiliza derivação robusta de blocos com o padrão PKCS7 e vetores de inicialização por entropia segura (os.urandom).
 
-### 📊 3. Analisador Forense de Logs & Detecção de Ameaças (SIEM Script) em Python
-* *Arquivo Principal:* analisador_logs.py
-* *O que faz:* Script focado em operações de Defesa (Blue Team). Ele realiza a varredura sistemática e automatizada de logs de servidores web para identificar assinaturas conhecidas de ataques em tempo real.
-* *Principais Conceitos Demonstrados:*
-  * *Análise de Assinaturas com Regex:* Uso de expressões regulares avançadas para identificar tentativas de injeção de código e manipulação de caminhos de diretório.
-  * *Identificação de Vetores de Ataque:* Detecção automatizada de vulnerabilidades críticas como SQL Injection (SQLi) e Path Traversal.
+### 📊 3. Analisador Forense de Logs & Detecção de Ameaças (SIEM Script) (Python)
+* *Arquivo:* analisador_logs.py
+* *Escopo:* Script voltado para SOC/Blue Team. Realiza varreduras automatizadas e análise por expressões regulares (Regex) em logs brutos de servidores para detectar assinaturas de ataques em tempo real, como SQLi e Path Traversal.
 
-### ⚡ 4. Scanner de Portas de Rede Automatizado (Network Port Scanner) em Python
-* *Arquivo Principal:* port_scanner.py
-* *O que faz:* Um script em Python otimizado para realizar varreduras de segurança em ativos de redes locais. Ele analisa de maneira sistemática endereços IP para identificar portas de comunicação expostas a ameaças.
-* *Principais Conceitos Demonstrados:*
-  * *Redes e Protocolos:* Análise da integridade da comunicação utilizando arquiteturas TCP/IP e simulação das etapas do Three-Way Handshake.
-  * *Fase de Reconhecimento (Footprinting):* Descoberta de vetores e superfícies de ataque em auditorias internas.
+### ⚡ 4. Scanner de Portas de Rede Automatizado (Network Port Scanner) (Python)
+* *Arquivo:* port_scanner.py
+* *Escopo:* Scanner de ativos de infraestrutura de rede utilizando sockets nativos para mapear a exposição de portas TCP abertas na superfície externa da rede de computadores.
+
+### 🛡️ 5. API Security Gateway, Rate Limiting & Proteção contra XSS (Python)
+* *Arquivo:* api_security_gateway.py
+* *Escopo:* Gateway defensivo com algoritmo de janela de tempo (Fixed Window) para mitigar de forma ativa ataques de força bruta, ataques DoS e injeções de scripts maliciosos (XSS) via sanitização de payloads HTML.
+
+### 🗂️ 6. Monitor de Integridade de Arquivos Críticos - FIM (Python)
+* *Arquivo:* verificador_integridade.py
+* *Escopo:* Sistema preventivo contra Ransomwares e Rootkits. Gera uma linha de base criptográfica (Baseline) contendo o hash SHA-256 de diretórios críticos e monitora variações não autorizadas na integridade das estruturas de arquivos.
+
+### 🛰️ 7. Analisador Forense Estrutural de Tráfego de Pacotes PCAP (Python)
+* *Arquivo:* analisador_pcap.py
+* *Escopo:* Decodificação de estruturas de cabeçalhos de pacotes IP e frames de baixo nível em formato binário bruto através do módulo struct. Essencial para investigações digitais e triagens de anomalias em tráfego de rede.
+
+### 🔐 8. Secrets Vault & Derivador de Chaves Industriais (PBKDF2) (Python)
+* *Arquivo:* gerenciador_segredos.py
+* *Escopo:* Sistema gerenciador de credenciais que elimina o risco de exposição de senhas e tokens em código fonte. Aplica o robusto algoritmo KDF PBKDF2 com salt aleatório e criptografia autenticada Fernet.
+
+### 🕸️ 9. Honeypot SSH Ativo de Decepção e Captura de Artefatos (Python)
+* *Arquivo:* simulador_honeypot.py
+* *Escopo:* Defesa ativa cibernética baseada em armadilhas de rede (Deception Technology). Cria um socket ouvinte falso simulando terminais SSH vulneráveis para coletar payloads de invasores, gerando inteligência e logs forenses detalhados.
 
 ---
 
 ## 🛠️ Tecnologias e Ferramentas Empregadas
-* *Linguagens de Programação:* C e Python
-* *Bibliotecas Especializadas:* cryptography (hazmat primitives), re, socket
-* *Frameworks e Metodologias:* OWASP Top 10, Práticas de Revisão de Código de Segurança (Secure Code Review)
+* *Linguagens de Programação:* C (Baixo Nível/Segurança de Software) e Python 3 (Segurança de Automações)
+* *Módulos Especializados:* cryptography, struct, socket, hashlib, re
+* *Conceitos de Engenharia:* SDLC Seguro, Hardening, Gestão de Identidades (IAM), Forense Digital e Threat Hunting
 
 ---
 
-## ⚙️ Como Executar e Testar os Projetos
+## ⚙️ Instalação e Execução das Ferramentas do Portfólio
 
-### 🔹 Módulo de Criptografia (Python)
-Certifique-se de instalar as dependências de criptografia padrão do mercado:
+Para testar as automações em Python, instale as primitivas criptográficas recomendadas pelo ecossistema industrial:
 bash
 pip install cryptography
-python3 criptografia.py
 
 
-### 🔹 Módulo de Análise de Logs (Python)
+### Exemplo: Executando o Secrets Vault Corporativo
 bash
-python3 analisador_logs.py
+python3 gerenciador_segredos.py
 
 
-### 🔹 Módulo de Varredura de Redes (Python)
-bash
-python3 port_scanner.py
-
-
-### 🔹 Módulo de Prevenção a Overflow (C)
+### Exemplo: Executando a Prevenção contra Buffer Overflow
 bash
 gcc buffer_overflow.c -o buffer_overflow
 ./buffer_overflow
