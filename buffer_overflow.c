@@ -1,22 +1,57 @@
 
 /*
-PROJECT: BUFFER OVERFLOW SECURITY LAB
-CATEGORY: SYSTEM SECURITY | LOW-LEVEL SECURITY
+ * BUFFER OVERFLOW SECURITY LAB
+ * System Security | Memory Safety
+ *
+ * Educational laboratory.
+ * Demonstrates safe buffer handling.
+ *
+ * Compile:
+ * gcc -Wall -Wextra -O2 buffer_overflow.c -o buffer_lab
+ */
 
-DESCRIPTION:
-Laboratório educacional desenvolvido em C para
-estudo de gerenciamento de memória e vulnerabilidades
-relacionadas a buffer overflow.
+#include <stdio.h>
+#include <string.h>
 
-CORE CAPABILITIES:
-- Demonstração de limites de buffers.
-- Estudo de memória e alocação.
-- Análise de comportamento de programas.
-- Práticas de programação segura.
+#define BUFFER_SIZE 16
 
-FOCUS:
-C Programming | Memory Safety | Secure Coding
+int main(void) {
 
-NOTE:
-Uso exclusivamente educacional, em ambiente local e controlado.
-*/
+    char buffer[BUFFER_SIZE];
+
+    printf("=== BUFFER SECURITY LAB ===\n");
+
+    printf(
+        "Enter text (maximum %d characters): ",
+        BUFFER_SIZE - 1
+    );
+
+    if (fgets(buffer, sizeof(buffer), stdin) == NULL) {
+
+        fprintf(stderr, "Input error.\n");
+
+        return 1;
+    }
+
+    buffer[strcspn(buffer, "\n")] = '\0';
+
+    printf("\nStored input: %s\n", buffer);
+
+    if (strlen(buffer) == BUFFER_SIZE - 1) {
+
+        printf(
+            "WARNING: Buffer capacity reached.\n"
+        );
+
+    } else {
+
+        printf(
+            "Input stored within buffer limits.\n"
+        );
+
+    }
+
+    printf("\nSecurity check completed.\n");
+
+    return 0;
+}
