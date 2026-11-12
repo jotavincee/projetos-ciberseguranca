@@ -175,10 +175,6 @@ Formação complementar e estudos em tecnologia e segurança da informação.
 
 ## 📬 Contact
 
-**GitHub:** (https://www.linkedin.com/safety/go/?url=https%3A%2F%2Fgithub.com%2Fjotavincee%2Fprojetos-ciberseguranca&urlhash=7E5g&mt=aZa-I_Gvgym5E4p7_gJKb2DFh-Ildil2Inhu4BYU0RRgsgieEi9V66Fut6CO5iNhOM5okkmgGsumprQ3xHZXHYsPK-UqrdKpKae_0CjrypQYLpdKCAB3xFRbiicgWD9oIqcUUGvEwGl3RwwrLUUALxuo5hK9Bew49HC799jqgth86lt_POZjNkbpiIfoNuXHb2A&isSdui=true&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BGQkIu2oFT1O4T0DI%2BYsZ4w%3D%3D)
-
-**LinkedIn:** https://www.linkedin.com/in/joãovince
-
 **Email:** jotavincee@gmail.com
 
 ---
