@@ -1,21 +1,22 @@
-#include <stdio.h>
-#include <string.h>
 
-void funcao_segura(void) {
-    char buffer_seguro[100];
+/*
+PROJECT: BUFFER OVERFLOW SECURITY LAB
+CATEGORY: SYSTEM SECURITY | LOW-LEVEL SECURITY
 
-    printf("Digite uma entrada segura: ");
-    
-    
-    if (fgets(buffer_seguro, sizeof(buffer_seguro), stdin) != NULL) {
-        
-        buffer_seguro[strcspn(buffer_seguro, "\n")] = '\0';
-        
-        printf("Dado armazenado com seguranca: %s\n", buffer_seguro);
-    }
-}
+DESCRIPTION:
+Laboratório educacional desenvolvido em C para
+estudo de gerenciamento de memória e vulnerabilidades
+relacionadas a buffer overflow.
 
-int main(void) {
-    funcao_segura();
-    return 0;
-}
+CORE CAPABILITIES:
+- Demonstração de limites de buffers.
+- Estudo de memória e alocação.
+- Análise de comportamento de programas.
+- Práticas de programação segura.
+
+FOCUS:
+C Programming | Memory Safety | Secure Coding
+
+NOTE:
+Uso exclusivamente educacional, em ambiente local e controlado.
+*/
