@@ -6,7 +6,7 @@
 
 **Building intelligent solutions. Securing digital environments. Automating technology.**
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jotavincee)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://www.linkedin.com/safety/go/?url=https%3A%2F%2Fgithub.com%2Fjotavincee%2Fprojetos-ciberseguranca&urlhash=7E5g&mt=aZa-I_Gvgym5E4p7_gJKb2DFh-Ildil2Inhu4BYU0RRgsgieEi9V66Fut6CO5iNhOM5okkmgGsumprQ3xHZXHYsPK-UqrdKpKae_0CjrypQYLpdKCAB3xFRbiicgWD9oIqcUUGvEwGl3RwwrLUUALxuo5hK9Bew49HC799jqgth86lt_POZjNkbpiIfoNuXHb2A&isSdui=true&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BGQkIu2oFT1O4T0DI%2BYsZ4w%3D%3D)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)]([https://www.linkedin.com/](https://www.linkedin.com/in/joãovince))
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Defense-00A86B?style=for-the-badge&logo=shield&logoColor=white)](https://www.nist.gov/cyberframework)
