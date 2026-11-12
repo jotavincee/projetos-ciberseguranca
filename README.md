@@ -7,7 +7,7 @@
 **Building intelligent solutions. Securing digital environments. Automating technology.**
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jotavincee)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)]([https://www.linkedin.com/](https://www.linkedin.com/in/joãovince))
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Defense-00A86B?style=for-the-badge&logo=shield&logoColor=white)](https://www.nist.gov/cyberframework)
 
