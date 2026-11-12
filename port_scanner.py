@@ -1,21 +1,21 @@
-import socket
-import sys
 
+"""
+PROJECT: NETWORK PORT SCANNER
+CATEGORY: NETWORK SECURITY
 
-alvo = "127.0.0.1"
+DESCRIPTION:
+Ferramenta de reconhecimento de serviços de rede
+para avaliação de exposição em ambientes autorizados.
 
-print(f"Iniciando varredura de segurança no alvo: {alvo}")
-print("-" * 50)
+CORE CAPABILITIES:
+- Verificação de portas TCP.
+- Identificação de serviços acessíveis.
+- Análise de exposição de rede.
+- Relatórios de reconhecimento técnico.
 
-portas_comuns = [21, 22, 80, 443, 8080]
+FOCUS:
+Network Reconnaissance | TCP/IP | Network Security
 
-for porta in portas_comuns:
-    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    s.settimeout(1.0)
-    
-    resultado = s.connect_ex((alvo, porta))
-    if resultado == 0:
-        print(f" Alerta: Porta {porta} está ABERTA e exposta.")
-    else:
-        print(f"Porta {porta}: Fechada/Protegida.")
-    s.close()
+NOTE:
+Utilização restrita a redes próprias ou autorizadas.
+"""
